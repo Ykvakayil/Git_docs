@@ -1,0 +1,60 @@
+### ONLY FOR FIRST TIME###
+
+git config --global user.name "username of github account"
+git config --global user.email email_id
+git config --list
+
+#####################
+
+
+TO CREATE A FILE : touch filename.txt
+TO OPEN A FILE : notepad filename.txt
+
+git status
+git add .
+git commit -m "message"
+git log
+
+TO CONNECT TO GITHUB REPO : git remote add origin https link from github of repo
+git remote -v
+git push -u origin master
+
+GENERATING SSH KEYS : ssh keygen -t rsa -C email_id
+Add the generated public key(.pub file) contents to ssh test place holder in github settings
+TO CHECK : ssh -T git@github.com
+
+TO CLONE A GITHUB REPO TO LOCAL MACHINE :
+
+git clone sshlink for that repo 
+
+TO REMOVE COMMITS BUT KEEP THE CHANGES AND GO TO A SNAPSHOT :
+
+git reset --soft commit_id for the snapshot where you want to go
+
+TO CREATE A NEW BRANCH :
+
+git branch branchname
+
+TO SWITCH TO ANOTHER BRANCH :
+
+git checkout branchname
+
+TO MERGE ONE BRANCH WITH OTHER :
+
+git merge branchname
+
+TO ADD THE BRANCH TO GITHUB :
+
+while in  master : git push -u origin branchname
+
+TO DELETE A BRANCH :
+
+LOCALLY : git branch -D branchname
+PUSH IT TO GITHUB : git push origin --delete branchname
+
+TO LIST ALL BRANCHES :
+
+git branch -v (or) git branch -av
+
+ 
+ter 
